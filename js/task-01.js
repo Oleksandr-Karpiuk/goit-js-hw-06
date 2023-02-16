@@ -23,25 +23,25 @@ console.log(`Number of categories: ${mainListRef.children.length}`);
 
 const firstItemRef = document.querySelector('.item');
 
-const firstCategoryTitle = firstItemRef.firstElementChild;
-console.log(`Category: ${firstCategoryTitle.textContent}`);
+const firstCategoryTitleRef = firstItemRef.firstElementChild;
+console.log(`Category: ${firstCategoryTitleRef.textContent}`);
 
-const firstListOfElements = firstCategoryTitle.nextElementSibling;
-console.log(`Elements: ${firstListOfElements.children.length}`);
+const firstListOfElementsRef = firstCategoryTitleRef.nextElementSibling;
+console.log(`Elements: ${firstListOfElementsRef.children.length}`);
 
 const secondItemRef = firstItemRef.nextElementSibling;
 
-const secondCategoryTitle = secondItemRef.firstElementChild;
-console.log(`Category: ${secondCategoryTitle.textContent}`);
+const secondCategoryTitleRef = secondItemRef.firstElementChild;
+console.log(`Category: ${secondCategoryTitleRef.textContent}`);
 
-const secondListOfElements = secondCategoryTitle.nextElementSibling;
-console.log(`Elements: ${secondListOfElements.children.length}`);
+const secondListOfElementsRef = secondCategoryTitleRef.nextElementSibling;
+console.log(`Elements: ${secondListOfElementsRef.children.length}`);
 
 const thirdItemRef = secondItemRef.nextElementSibling;
 
-const thirdCategoryTitle = thirdItemRef.firstElementChild;
-console.log(`Category: ${thirdCategoryTitle.textContent}`);
+const thirdCategoryTitleRef = thirdItemRef.firstElementChild;
+console.log(`Category: ${thirdCategoryTitleRef.textContent}`);
 
-const thirdListOfElements = thirdCategoryTitle.nextElementSibling;
-console.log(`Elements: ${thirdListOfElements.children.length}`);
+const thirdListOfElementsRef = thirdCategoryTitleRef.nextElementSibling;
+console.log(`Elements: ${thirdListOfElementsRef.children.length}`);
 
