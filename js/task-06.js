@@ -27,7 +27,6 @@
 const inputRef = document.querySelector("#validation-input");
 
 inputRef.addEventListener("blur", onInputBlur);
-inputRef.addEventListener("focus", onInputFocus);
 
 function onInputBlur(event) {
   if (
@@ -35,12 +34,9 @@ function onInputBlur(event) {
     Number(inputRef.getAttribute("data-length"))
   ) {
     event.currentTarget.classList.add("valid");
+    event.currentTarget.classList.remove("invalid");
   } else {
     event.currentTarget.classList.add("invalid");
+    event.currentTarget.classList.remove("valid");
   }
-}
-
-function onInputFocus(event) {
-  event.currentTarget.classList.remove("valid");
-  event.currentTarget.classList.remove("invalid");
 }
