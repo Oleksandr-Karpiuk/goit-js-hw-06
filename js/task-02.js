@@ -22,5 +22,3 @@ const listItemRef = ingredients.map((ingredient) => {
 });
 
 listRef.append(...listItemRef);
-
-console.log(listRef);

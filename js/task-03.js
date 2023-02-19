@@ -22,11 +22,15 @@ const images = [
 ];
 
 const galleryListRef = document.querySelector(".gallery");
+galleryListRef.setAttribute(
+  "style",
+  "display: grid; grid-gap: 15px; grid-template-columns: 1fr 1fr 1fr;"
+);
 
 const makeGalleryListElementMarkup = ({ url, alt }) => {
   return `
     <li>
-      <img src="${url}" alt="${alt}">
+      <img src="${url}" alt="${alt}" width = "100%">
     </li>
   `;
 };
@@ -36,5 +40,3 @@ const makeGalleryListElement = images
   .join("");
 
 galleryListRef.insertAdjacentHTML("beforeend", makeGalleryListElement);
-
-console.log(galleryListRef);
